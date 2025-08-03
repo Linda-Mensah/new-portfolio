@@ -1,13 +1,18 @@
-import Layout from "../Layout";
 import About from "./About";
-import Experience from "./Experience";
+import WorkExperience from "./WorkExperience";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Cta from "../components/Cta";
 
 const Home = () => {
   return (
-    <Layout>
+    <>
       <About />
-      <Experience />
-    </Layout>
+      <Skills />
+      <WorkExperience />
+      <Projects />
+      <Cta />
+    </>
   );
 };
 

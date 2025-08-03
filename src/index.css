@@ -1,27 +1,3 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 @import "tailwindcss";
-
-.animate-fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInSlide 0.8s ease-out forwards;
-}
-
-@keyframes fadeInSlide {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-}
-
-body {
-  padding-top: 2rem;
-}

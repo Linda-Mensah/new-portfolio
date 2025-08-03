@@ -1,24 +1,92 @@
-.about-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 6rem 1.5rem;
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInSlide 0.8s ease-out forwards;
 }
 
-.about-container {
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+main {
+  margin-top: 36px;
+}
+
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #18181b;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-layout-container {
+  margin-bottom: 70px;
+}
+
+@media (min-width: 640px) {
+  .navbar-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.mobile-menu {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.about-left,
-.about-right {
+.about-section {
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.about-left {
   background-color: rgba(0, 139, 139, 0.05);
   padding: 2rem;
   margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+}
+
+.about-right {
+  background-color: rgba(0, 139, 139, 0.05);
+  padding: 5.8rem;
+  margin: 1rem;
 }
 
 .available {
@@ -39,13 +107,10 @@
 }
 
 .about-right-socials {
-  padding: 3rem 1rem;
+  padding: 1rem;
 }
 
 .socials-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
   margin: 0.8rem 0;
 }
 
@@ -68,7 +133,7 @@
 }
 
 .experience-container {
-  margin: 40px 5%;
+  margin: 20px 5%;
   padding: 24px;
 }
 
@@ -84,6 +149,7 @@
 .assist-container {
   margin: 60px;
   padding: 40px 20px;
+  background-color: rgba(0, 139, 139, 0.05);
 }
 
 .assist-heading {
@@ -91,7 +157,7 @@
 }
 
 .title-shape {
-  margin: 2px auto;
+  margin: 4px auto;
 }
 
 .assist-grid {
@@ -134,7 +200,7 @@
 
 @media (min-width: 1024px) {
   .experience-container {
-    margin: 60px 10%;
+    margin: 40px 10%;
     padding: 48px;
   }
 
@@ -148,5 +214,199 @@
 
   .assist-card {
     padding: 36px 28px;
+  }
+}
+
+.skills-section {
+  margin-top: 80px;
+  row-gap: 40px;
+}
+
+.skills-flip-section {
+  padding: 2rem;
+}
+
+.skill-label {
+  margin-top: 10px;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .skills-section {
+    margin-top: 100px 0;
+  }
+
+  .skills-flip-section {
+    padding: 3rem;
+  }
+
+  .flip-card {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-section {
+    margin-top: 120px;
+  }
+
+  .skills-flip-section {
+    padding: 4rem;
+  }
+
+  .flip-card {
+    width: 360px;
+  }
+}
+
+.work-experience-section {
+  padding: 2rem 1rem;
+  margin: 60px auto;
+  background-color: rgba(0, 139, 139, 0.05);
+}
+
+.company-card {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .work-experience-section {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work-experience-section {
+    padding: 4rem;
+  }
+
+  .company-list {
+    margin: 4rem 3rem;
+  }
+}
+
+.projects-section {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-grid {
+  padding: 40px;
+}
+
+@media (min-width: 640px) {
+  .projects-section {
+    padding: 48px 48px;
+  }
+
+  .project-grid {
+    padding: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-section {
+    padding: 30px 64px;
+  }
+
+  .project-grid {
+    padding: 72px;
+  }
+}
+
+.project-title {
+  margin-bottom: 1rem;
+}
+
+.cta-title,
+.cta-subtitle {
+  margin: 20px 0;
+}
+
+.header-container {
+  margin-bottom: 60px;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.tag {
+  padding: 4px 12px;
+}
+
+.contact-section {
+  padding: 3rem 4rem;
+  margin: 50px auto;
+  background-color: rgba(0, 139, 139, 0.05);
+}
+
+.contact-title,
+.contact-subtitle {
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 8px 12px;
+}
+
+.message-button {
+  padding: 8px 24px;
+}
+
+.contact-connect {
+  margin-bottom: 8px;
+}
+
+.contact-bottom {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 2rem auto 20px auto;
+}
+
+.contact-bottom-left,
+.contact-bottom-right {
+  margin: 0.5rem;
+}
+
+.social-card {
+  padding: 16px;
+}
+
+.footer-container {
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+}
+
+.copyright {
+  padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 2rem 3rem;
+    margin-top: 6rem;
   }
 }
