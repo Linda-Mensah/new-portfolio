@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Cta = () => {
   return (
     <>
-      <section className="text-center mt-12">
+      <section className="cta-section text-center mt-12">
         <h3 className="cta-title text-xl font-semibold text-gray-800 mb-2">
           Want to build something amazing together?
         </h3>

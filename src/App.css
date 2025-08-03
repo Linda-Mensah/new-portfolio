@@ -343,7 +343,8 @@ main {
 }
 
 .cta-title,
-.cta-subtitle {
+.cta-subtitle,
+.cta-section {
   margin: 20px 0;
 }
 
