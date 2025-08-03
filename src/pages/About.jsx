@@ -4,35 +4,33 @@ import {
   Mail,
   Instagram,
   CheckCircle,
-  MapPin,
   Star,
 } from "lucide-react";
-import Layout from "../Layout";
 
 const About = () => {
   return (
     <section id="home" className="about-section max-w-[1200px] animate-fade-in">
       <div className="about-container flex flex-col gap-[3rem]">
         <div className="about-left flex flex-col justify-between h-[100%] shadow-lg rounded-2xl border border-gray-100 space-y-6">
-          <div className="flex items-center gap-3 text-teal-700 font-medium text-sm">
+          <div className="flex items-center  gap-3 text-teal-700 font-medium text-sm">
             <CheckCircle className="w-5 h-5" />
-            <span className="available text-teal-700 ">Available for work</span>
+            <span className="available text-teal-700">Available for work</span>
           </div>
 
-          <h1 className="about-title text-nowrap text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="about-title text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Hi! I'm a <br />{" "}
             <span className="text-teal-700">Frontend Developer</span>
           </h1>
 
           <p className="about text-gray-600 leading-relaxed">
-            I specialize in building responsive, user-friendly web interfaces
-            using modern technologies like React, JavaScript, and Tailwind CSS.
+            With hands-on experience in HTML, CSS, Tailwind CSS, JavaScript, and
+            React, I build clean, responsive user interfaces and continuously
+            refine my craft through real-world projects.
             <br />
-            I'm passionate about creating seamless user experiences and turning
-            complex problems into intuitive solutions.
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            consequatur quaerat,
+            My background in project management and proficiency with tools like
+            Jira, Trello, and Git allow me to bring structure, clarity, and
+            dependability to every client collaboration.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

@@ -7,13 +7,17 @@ const Layout = () => {
   return (
     <>
       <ScrollToTop />
-      <div className="nav-layout-container">
-        <Navbar />
+      <div className="min-h-screen flex flex-col">
+        <div className="nav-layout-container">
+          <Navbar />
+        </div>
+
+        <main className="flex-1">
+          <Outlet />
+        </main>
+
+        <Footer />
       </div>
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
     </>
   );
 };

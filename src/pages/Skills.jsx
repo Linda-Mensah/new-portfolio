@@ -55,9 +55,9 @@ const FlipCard = ({ title, skills }) => (
 const Skills = () => {
   return (
     <>
-      <section className="experience-section">
+      <section className="experience-section overflow-x-hidden">
         <div className="experience-container shadow-sm flex flex-col justify-center items-center rounded-xl bg-white">
-          <h2 className="experience-heading text-3xl font-bold text-gray-800 relative">
+          <h2 className="experience-heading text-xl md:text-3xl text-nowrap font-bold text-gray-800 relative">
             Designing with Purpose
             <span className="title-shape block w-52">
               <svg
@@ -82,14 +82,14 @@ const Skills = () => {
               interfaces.
               <br />
               <br />I aim to build seamless web experiences that blend clean
-              design with efficient code, making the web a better place—one
+              design with efficient code, making the web a better place, one
               component at a time.
             </p>
           </div>
         </div>
 
         <div className="assist-container text-center rounded-xl">
-          <h2 className="assist-heading text-3xl font-bold text-gray-800">
+          <h2 className="assist-heading text-xl text-nowrap md:text-3xl font-bold text-gray-800">
             How Can I Assist You?
             <span className="title-shape block w-52">
               <svg
@@ -137,8 +137,8 @@ const Skills = () => {
       </section>
 
       <section className="skills-section">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
-          Web & PM Tools
+        <h2 className="text-xl md:text-3xl font-bold text-center text-gray-800">
+          Web Dev & PM Tools
           <span className="title-shape block w-52">
             <svg
               viewBox="0 0 100 10"
